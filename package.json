@@ -1,0 +1,28 @@
+{
+  "name": "documentMicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "build-src": "babel src --out-dir dist/src --copy-files",
+    "build": "yarn run build-src",
+    "start": "yarn run build && node ./dist/src/server.js"
+  },
+  "keywords": [],
+  "author": "nHub Nigeria",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.188.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "log4js": "^2.5.2",
+    "multer": "^1.3.0"
+  }
+}
